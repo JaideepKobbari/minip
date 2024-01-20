@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .food-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.food-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 1.0);
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.food-item:hover {
+  transform: translateY(-10px);
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.food-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  transition: transform 0.5s ease-out;
+  transform: translateY(100%);
+}
+
+.food-item:hover .food-details {
+  transform: translateY(0);
+}
+
+.food-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.food-price {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.order-button {
+  display:inline-block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 1.0);
+  padding: 10px 20px;
+}
+    </style>
+</head>
+<body>
+  <div class="total">
+    <div class="food-menu">
+        <div class="food-item">
+          <img src="chicken1.jpg" alt="Food Image" class="food-image">
+          <h2 class="food-name">Chicken Biryani</h2>
+          <p class="food-price">Rs. 100/-</p>
+          <a href="three2.html">
+          <button class="order-button">Order Now </button>
+          </a>
+          
+        </div>
+        <div class="food-item">
+          <img src="pizza1.jpg" alt="Food Image" class="food-image">
+          <h2 class="food-name">Pizza</h2>
+          <p class="food-price">Large- Rs. 250/- <br>
+            Small- Rs. 100/-<br>
+          </p>
+          <br>
+          <a href="three2.html">
+          <button class="order-button">Order Large</button> <br><br>
+          <button class="order-button">Order Small</button>
+          </a>
+        </div>
+        <div class="food-item">
+          <img src="burger2.jpg" alt="Food Image" class="food-image">
+          <h2 class="food-name">Burger</h2>
+          <p class="food-price">Rs.50/-</p>
+          <a href="three2.html">
+            <button class="order-button">Order Now</button>
+          </a>
+        </div>
+        <div class="food-item">
+          <img src="FF1.jpg" alt="Food Image" class="food-image">
+          <h2 class="food-name">French Fries</h2>
+          <p class="food-price">Rs. 45/-</p>
+          <a href="three2.html">
+            <button class="order-button">Order Now</button>
+          </a>>
+        </div>
+        <div class="food-item">
+          <img src="cc.png" alt="Food Image" class="food-image">
+          <h2 class="food-name">Coco Cola</h2>
+          <p class="food-price">Rs. 25/-</p>
+          <a href="three2.html">
+            <button class="order-button">Order Now</button>
+          </a>
+        </div>
+        <div class="food-item">
+            <img src="ic.jpg" alt="Food Image" class="food-image">
+            <h2 class="food-name">Ice Cream</h2>
+            <p class="food-price">Rs. 30/-</p>
+            <a href="three2.html">
+            <button class="order-button">Order Now</button>
+            </a>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
